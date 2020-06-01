@@ -1,6 +1,7 @@
 #ifndef LITTLEFSEditor_H_
 #define LITTLEFSEditor_H_
 #include <ESPAsyncWebServer.h>
+#include <LittleFS.h>
 
 class LITTLEFSEditor: public AsyncWebHandler {
   private:
