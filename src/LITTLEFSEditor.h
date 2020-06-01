@@ -3,7 +3,7 @@
 #include <ESPAsyncWebServer.h>
 #include <LittleFS.h>
 
-class LITTLEFSEditor: public AsyncWebHandler {
+class LittleFSEditor: public AsyncWebHandler {
   private:
     fs::FS _fs;
     String _username;
@@ -12,9 +12,9 @@ class LITTLEFSEditor: public AsyncWebHandler {
     uint32_t _startTime;
   public:
 #ifdef ESP32
-    LITTLEFSEditor(const fs::FS& fs, const String& username=String(), const String& password=String());
+    LittleFSEditor(const fs::FS& fs, const String& username=String(), const String& password=String());
 #else
-    LITTLEFSEditor(const String& username=String(), const String& password=String(), const fs::FS& fs=LittleFS);
+    LittleFSEditor(const String& username=String(), const String& password=String(), const fs::FS& fs=LittleFS);
 #endif
     virtual bool canHandle(AsyncWebServerRequest *request) override final;
     virtual void handleRequest(AsyncWebServerRequest *request) override final;
