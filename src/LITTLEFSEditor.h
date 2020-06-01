@@ -13,7 +13,7 @@ class LITTLEFSEditor: public AsyncWebHandler {
 #ifdef ESP32
     LITTLEFSEditor(const fs::FS& fs, const String& username=String(), const String& password=String());
 #else
-    LITTLEFSEditor(const String& username=String(), const String& password=String(), const fs::FS& fs=LITTLEFS);
+    LITTLEFSEditor(const String& username=String(), const String& password=String(), const fs::FS& fs=LittleFS);
 #endif
     virtual bool canHandle(AsyncWebServerRequest *request) override final;
     virtual void handleRequest(AsyncWebServerRequest *request) override final;
