@@ -377,9 +377,9 @@ static bool isExcluded(fs::FS &_fs, const char *filename) {
 // WEB HANDLER IMPLEMENTATION
 
 #ifdef ESP32
-LittleFSEditor::LITTLEFSEditor(const fs::FS& fs, const String& username, const String& password)
+LittleFSEditor::LittleFSEditor(const fs::FS& fs, const String& username, const String& password)
 #else
-LittleFSEditor::LITTLEFSEditor(const String& username, const String& password, const fs::FS& fs)
+LittleFSEditor::LittleFSEditor(const String& username, const String& password, const fs::FS& fs)
 #endif
 :_fs(fs)
 ,_username(username)
