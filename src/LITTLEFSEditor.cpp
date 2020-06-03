@@ -1,4 +1,4 @@
-#ifdef(ESP8266)
+#ifdef ESP8266
 #include "LITTLEFSEditor.h"
 #include <FS.h>
 
