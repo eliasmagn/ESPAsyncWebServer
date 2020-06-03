@@ -1,3 +1,4 @@
+#ifdef(ESP8266)
 #ifndef LITTLEFSEditor_H_
 #define LITTLEFSEditor_H_
 #include <ESPAsyncWebServer.h>
@@ -22,4 +23,5 @@ class LittleFSEditor: public AsyncWebHandler {
     virtual bool isRequestHandlerTrivial() override final {return false;}
 };
 
+#endif
 #endif
