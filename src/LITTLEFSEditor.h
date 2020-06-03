@@ -1,4 +1,4 @@
-#ifdef(ESP8266)
+#ifdef ESP8266
 #ifndef LITTLEFSEditor_H_
 #define LITTLEFSEditor_H_
 #include <ESPAsyncWebServer.h>
