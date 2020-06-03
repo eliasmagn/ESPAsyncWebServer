@@ -1,3 +1,4 @@
+#if defined(ESP8266)
 #include "LITTLEFSEditor.h"
 #include <FS.h>
 
@@ -542,3 +543,4 @@ void LittleFSEditor::handleUpload(AsyncWebServerRequest *request, const String& 
     }
   }
 }
+#endif
